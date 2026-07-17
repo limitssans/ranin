@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1512; /* Latar belakang gelap estetik tema kopi */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #f5ece5;
+    overflow-x: hidden;
+}
+
+.menu-container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 950px;
+}
+
+.cafe-title {
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    color: #d4a373; /* Warna aksen emas/cokelat muda hangat */
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.instruction {
+    font-size: 0.9rem;
+    color: #a9927d;
+    margin-bottom: 25px;
+}
+
+/* Wadah Buku Lipat */
+.flip-book {
+    margin: 0 auto;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    background-color: #2b231f;
+}
+
+/* Konten Tiap Halaman */
+.page-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #2b231f;
+}
+
+.page-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Gambar penuh tanpa terpotong */
+    display: block;
+}
+
+/* Navigasi Tombol */
+.nav-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-buttons button {
+    background-color: #d4a373;
+    color: #1a1512;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.nav-buttons button:hover {
+    background-color: #c39262;
+}
+
+.nav-buttons button:active {
+    transform: scale(0.97);
+}
+
+/* Responsivitas Layar Kecil (Smartphone) */
+@media (max-width: 768px) {
+    .cafe-title {
+        font-size: 1.8rem;
+    }
+    .menu-container {
+        padding: 10px;
+    }
+    .nav-buttons {
+        margin-top: 15px;
+    }
+}

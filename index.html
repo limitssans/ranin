@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Ranin - Buku Menu Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1 class="cafe-title">KOPI RANIN</h1>
+        <p class="instruction">Geser atau klik ujung halaman untuk membuka menu</p>
+
+        <!-- Wadah Utama Buku Menu -->
+        <div class="flip-book" id="menuBook">
+            <div class="page-content"><img src="01-cover.jpg" alt="Cover Menu"></div>
+            <div class="page-content"><img src="02-prolog.jpg" alt="Prolog"></div>
+            <div class="page-content"><img src="03-tubruk.jpg" alt="Kopi Tubruk"></div>
+            <div class="page-content"><img src="04-french-press.jpg" alt="French Press"></div>
+            <div class="page-content"><img src="05-americano.jpg" alt="Americano"></div>
+            <div class="page-content"><img src="06-espresso.jpg" alt="Espresso"></div>
+            <div class="page-content"><img src="07-cappucino.jpg" alt="Cappucino"></div>
+            <div class="page-content"><img src="08-filter.jpg" alt="Filter Coffee"></div>
+            <div class="page-content"><img src="09-latte.jpg" alt="Latte"></div>
+            <div class="page-content"><img src="10-hot-latte.jpg" alt="Hot Latte"></div>
+            <div class="page-content"><img src="11-coldbrew.jpg" alt="Cold Brew"></div>
+            <div class="page-content"><img src="12-affogato.jpg" alt="Affogato"></div>
+            <div class="page-content"><img src="13-klasik.jpg" alt="Kopi Klasik"></div>
+            <div class="page-content"><img src="14-smoothies.jpg" alt="Smoothies"></div>
+            <div class="page-content"><img src="15-coklat.jpg" alt="Coklat"></div>
+            <div class="page-content"><img src="16-nusantara.jpg" alt="Kopi Nusantara"></div>
+        </div>
+
+        <!-- Navigasi Tombol Tambahan -->
+        <div class="nav-buttons">
+            <button id="prevBtn">Sebelumnya</button>
+            <button id="nextBtn">Selanjutnya</button>
+        </div>
+    </div>
+
+    <!-- Script Pustaka PageFlip -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
